@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geometric Figures</title>
+</head>
+<body>
+    <h1>Geometric Figures</h1>   
+    
+  <div class="body">
+    <div>
+        <img src="img/cuadrado.jpg" alt="">
+        <section>
+            <h2>Calculator the area and perimeter of square</h2>
+            <form> 
+                <div>
+                    <label for="squareInput"> 
+                        how long is each side?
+                    </label>
+                    </div>
+                    <input type="number" id="squareInput">
+                    <p id="squarePerimeter"></p>
+                    <p id="squareArea"></p>
+                    <div class="botones">
+                    <button type="button" onclick="squarePerimeterCalculate()">Calculate Perimeter</button>
+                    <button type="button" onclick="squareAreaCalculate()">Calculate Area</button>
+                    <button onclick="clearAll()">Reset</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div>
+        <img src="img/circulo.jpg" alt="">
+        <section>
+            <h2>Calculate the area and perimeter of a circle</h2>
+            <form>
+                <div>
+                    <label for="radioInput">
+                        how long is the radious?
+                    </label>
+                    </div>
+                    <input type="number" id="radioInput">
+                    <p id="CirclePerimeter"></p>
+                    <p id="CircleArea"></p>
+                    <div class="botones">
+                    <button type="button" onclick="CircleCalcularPerimeter()">Calculate perimeter</button>
+                    <button type="button" onclick="CircleCalcularArea() ">Calculate area</button> 
+                    <button onclick="clearAll()">Reset</button>   
+                </div>
+            </form>
+        </section>
+    </div>
+    <div>
+        <img src="img/triangulo.jpg">
+        <section>
+            <h2>Calculate the area and petimeter of a triangle</h2>
+            <form>
+                <div>
+                    <label for="lado1Input">
+                        how long is the first side?
+                    </label>
+                    </div>
+                    <input type="number" id="lado1Input">
+                    <div>
+                    <label for="lado2Input">
+                        how long is the second side?
+                    </label>
+                    </div>
+                    <div>
+                    <input type="number" id="lado2Input">
+                    </div>
+                    <div>
+                    <label for="baseInput">
+                        how long is the base?
+                    </label>
+                    </div>
+                    <div>
+                    <input type="number" id="baseInput">
+                    </div>
+                    <div>
+                    <label for="alturaInput">
+                        how long is the height?
+                    </label>
+                    </div>
+                    <div>
+                    <input type="number" id="alturaInput">  
+                    <p id="Perimeter"></p>
+                    <p id="AreaResult"></p>   
+                    </div>
+                    <div class="botones">
+                        <button type="button" onclick="calculatePerimetroTriangule()">Calculate perimeter</button>
+                        <button type="button" onclick="calculateAreaTriangule()">Calculate area</button>
+                        <button onclick="clearAll()">Reset</button>
+                    </div>
+                </div>
+            
+            </form>
+        </section>
+    </div>
+ </div>
+    <script src="js/java.js"></script>
+</body>
+</html>
